@@ -1,5 +1,0 @@
-C# Sharp for addition of two Matrices of same size.
-
-C# Sharp for multiplication of two square Matrices.
-
-C# Sharp to find transpose of a given matrix
