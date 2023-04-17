@@ -1,6 +1,6 @@
 public class MatrixTranspose
 {
-    public static void Main()
+    public static void doMatrixTranspose()
     {
         int i, j, r, c;
         int[,] matrix1 = new int[50, 50];
