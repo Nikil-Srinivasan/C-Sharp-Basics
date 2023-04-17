@@ -1,6 +1,6 @@
 public class MainProgram
 {
-    public static void Main()
+    public static void driverProgram()
     {
         Rectangle rectangle = new Rectangle();
         rectangle.ShapeLength = 10;
