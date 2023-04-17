@@ -20,7 +20,7 @@ public class Addition
         return num1 + num2;
     }
 
-    public static void Main()
+    public static void performAddition()
     {
         Addition addition = new Addition();
         Console.WriteLine("Sum of 10 and 20 is " + addition.add(10, 20));
