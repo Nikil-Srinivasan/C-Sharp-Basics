@@ -8,7 +8,7 @@ public class Circle : Shape
         get => _circleRadius;
     }
 
-    public double getShapeArea()
+    public override double getShapeArea()
     {
         return PI * this.CircleRadius * CircleRadius;
     }

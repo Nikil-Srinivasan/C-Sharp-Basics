@@ -15,5 +15,10 @@ public class Shape
         set => _shapeWidth = value;
     }
 
+    public virtual double getShapeArea()
+    {
+        return this.ShapeLength * this.ShapeWidth;
+    }
+
 
 }
