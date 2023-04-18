@@ -1,6 +1,6 @@
 public class MainProgram
 {
-    public static void Main()
+    public static void findArea()
     {
         Shape rectangle = new Rectangle();
         rectangle.ShapeLength = 10;
