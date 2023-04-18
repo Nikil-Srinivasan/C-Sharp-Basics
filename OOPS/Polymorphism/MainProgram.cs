@@ -1,15 +1,15 @@
 public class MainProgram
 {
-    public static void driverProgram()
+    public static void Main()
     {
-        Rectangle rectangle = new Rectangle();
+        Shape rectangle = new Rectangle();
         rectangle.ShapeLength = 10;
         rectangle.ShapeWidth = 5;
         Console.WriteLine("The area of rectangle is " + rectangle.getShapeArea());
 
-        Circle circle = new Circle();
-        circle.CircleRadius = 5;
-        Console.WriteLine("The area of circle is {0}", circle.getShapeArea());
+        Shape square = new Square();
+        square.ShapeLength = 10;
+        Console.WriteLine("The area of square is " + square.getShapeArea());
 
     }
 }

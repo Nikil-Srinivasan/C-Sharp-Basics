@@ -1,6 +1,6 @@
 public class MainPrograms
 {
-    public static void Main()
+    public static void Employee()
     {
         EmployeeDetails employeeDetails = new EmployeeDetails();
         employeeDetails.EmployeeName = "Nikil";
