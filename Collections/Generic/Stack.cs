@@ -1,6 +1,6 @@
 public class Stack
 {
-    public static void Main()
+    public static void performStackOperations()
     {
         Stack<string> navigation = new Stack<string>();
 

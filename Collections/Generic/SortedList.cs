@@ -1,6 +1,6 @@
 public class SortedListExample
 {
-    public static void Main()
+    public static void sortedListMethods()
     {
         SortedList<string, int> customerDetails = new SortedList<string, int>();
 

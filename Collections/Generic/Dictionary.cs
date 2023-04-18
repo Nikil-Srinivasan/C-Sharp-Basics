@@ -27,7 +27,7 @@ public class DictionaryExample
         }
 
         //use TryGetValue() to get a value of unknown key
-        if (employeeDetails.TryGetValue(103, out string? value))
+        if (employeeDetails.TryGetValue(103, out string value))
         {
             Console.WriteLine($"Third Employee: {value}\n");
         }
