@@ -1,5 +1,6 @@
 public class CellPhone : DialerApp
 {
+    //Overrided Method to perform initiateCall
     public override void initiateCall(string receiverName)
     {
         Console.WriteLine("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
@@ -7,6 +8,7 @@ public class CellPhone : DialerApp
         Console.WriteLine("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n\n");
     }
 
+    //Overrided Method to perform declineCall
     public override void declineCall()
     {
         Console.WriteLine("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
@@ -15,10 +17,30 @@ public class CellPhone : DialerApp
     }
     public static void Main()
     {
+        // customer object is created inorder to access methods and properties
         CellPhone customer = new CellPhone();
-        Console.WriteLine("\nMy Phone Number: {0} \n", customer.phoneNumber);
-        customer.initiateCall("Dad");
-        customer.declineCall();
-        customer.findSpamCall();
+
+        // Get phone number and store it
+        try
+        {
+            Console.WriteLine("Enter your phone number");
+            long phoneNumber = Convert.ToInt64(Console.ReadLine());
+            customer.PhoneNumber = phoneNumber;
+
+            Console.WriteLine("\nMy Phone Number: {0} \n", customer.PhoneNumber);
+
+            // Abstract method is overrided
+            customer.initiateCall("Dad");
+            customer.declineCall();
+
+            // Abstract method is invoked
+            customer.findSpamCall();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("OOPS!!! Wrong Number");
+        }
+
+
     }
 }
