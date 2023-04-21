@@ -1,6 +1,6 @@
 public class Customer
 {
-    public static void Main()
+    public static void main()
     {
         FederalBank savingsAccount = new FederalBank();
         savingsAccount.checkBalance();
