@@ -10,7 +10,7 @@ public abstract class DialerApp
     public abstract void declineCall();
 
     // To find and block the spam calls
-    public void findSpamCall()
+    public virtual void findSpamCall()
     {
         Console.WriteLine("Spam Call has been blocked !!!");
     }

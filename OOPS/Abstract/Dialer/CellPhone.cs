@@ -15,9 +15,9 @@ public class CellPhone : DialerApp
         Console.WriteLine("  Your call has been declined");
         Console.WriteLine("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n\n");
     }
-    public static void Main()
+    public static void main()
     {
-        // customer object is created inorder to access methods and properties
+        // customer object is created inorder to access methods and fields
         CellPhone customer = new CellPhone();
 
         // Get phone number and store it
