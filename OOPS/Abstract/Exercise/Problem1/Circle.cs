@@ -1,9 +1,12 @@
-public class Circle : Shape
+namespace Problem1.Perimeter
 {
-    const float PI = 3.14f;
-    public float Radius { get; set; }
-    public override double calculatePerimeter()
+    public class Circle : Shape
     {
-        return 2 * PI * Radius;
+        const float PI = 3.14f;
+        public float Radius { get; set; }
+        public override double calculatePerimeter()
+        {
+            return 2 * PI * Radius;
+        }
     }
 }

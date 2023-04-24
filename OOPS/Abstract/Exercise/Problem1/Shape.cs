@@ -1,4 +1,7 @@
-public abstract class Shape
+namespace Problem1.Perimeter
 {
-    public abstract Double calculatePerimeter();
+    public abstract class Shape
+    {
+        public abstract Double calculatePerimeter();
+    }
 }

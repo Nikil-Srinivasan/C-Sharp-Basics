@@ -1,6 +1,6 @@
 public class MainProg
 {
-    public static void Main()
+    public static void main()
     {
         StudentA ramu = new StudentA(98, 87, 54);
         System.Console.WriteLine("\nThe percentage of Ramu is {0:F}\n", ramu.getPercentage());

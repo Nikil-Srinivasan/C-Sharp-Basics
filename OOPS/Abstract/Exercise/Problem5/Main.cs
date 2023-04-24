@@ -1,6 +1,6 @@
 public class MainDriver
 {
-    public static void Main(string[] args)
+    public static void main(string[] args)
     {
         SubClass obj_SubClass = new SubClass();
         obj_SubClass.a_method();

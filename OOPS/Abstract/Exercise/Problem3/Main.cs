@@ -1,6 +1,6 @@
 public class BankCustomer
 {
-    public static void Main()
+    public static void main()
     {
         Bank_A savingsAccount1 = new Bank_A();
         savingsAccount1.balance = 150.18M;

@@ -1,6 +1,6 @@
 public class DriverProgram
 {
-    public static void Main()
+    public static void main()
     {
         Console.WriteLine("List of Shapes:\n1.Circle\n2.Rectangle\n3.Square\nEnter your choice:");
         int choiceOfShape = Convert.ToInt32(Console.ReadLine());

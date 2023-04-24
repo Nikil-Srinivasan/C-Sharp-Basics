@@ -1,8 +1,11 @@
-public class Square : Shape
+namespace Problem1.Perimeter
 {
-    public float Side { get; set; }
-    public override double calculatePerimeter()
+    public class Square : Shape
     {
-        return Side * 4;
+        public float Side { get; set; }
+        public override double calculatePerimeter()
+        {
+            return Side * 4;
+        }
     }
 }

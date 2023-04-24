@@ -1,8 +1,8 @@
 public class StudentA : Mark
 {
-    public int MathMark { set; get; }
-    public int PhysicsMark { set; get; }
-    public int ChemistryMark { set; get; }
+    public int MathMark { private set; get; }
+    public int PhysicsMark { private set; get; }
+    public int ChemistryMark { private set; get; }
 
     public StudentA(int mathMark, int physicsMark, int chemistryMark)
     {

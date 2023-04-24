@@ -1,10 +1,13 @@
-public class Rectangle : Shape
+namespace Problem1.Perimeter
 {
-    public float Length { get; set; }
-    public float Breadth { get; set; }
-
-    public override double calculatePerimeter()
+    public class Rectangle : Shape
     {
-        return 2 * (Length + Breadth);
+        public float Length { get; set; }
+        public float Breadth { get; set; }
+
+        public override double calculatePerimeter()
+        {
+            return 2 * (Length + Breadth);
+        }
     }
 }
