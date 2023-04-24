@@ -1,6 +1,6 @@
 public class DriverClass
 {
-    public static void Main()
+    public static void main()
     {
         Console.WriteLine("ChooseStall Type\n1)Gold Stall\n2)Premium Stall\n3)Executive Stall");
         int choiceOfStall = Convert.ToInt32(Console.ReadLine());
