@@ -1,35 +1,30 @@
 namespace Exercise2.Bank
 {
-    public class MortgageAccount : Bank
+    public class MortgageAccount : Accounts
     {
+        public BankCustomer customer;
         public decimal mortgageAccountBalance { get; set; }
-        private decimal interestRate = 0;
-        public MortgageAccount(BankCustomer customer, decimal AccountBalance)
+        private decimal interestRate = 3.2m;
+        public MortgageAccount(BankCustomer customer, decimal balance) : base(customer, balance) { }
+        public override decimal calculateInterestRate(int period)
         {
-            mortgageAccountBalance = AccountBalance;
-
-            if (customer is IndividualCustomer)
+            if (customer is IndividualCustomer && period > 6)
             {
-                interestRate = 2.75m;
+                period -= 6;
 
             }
-            else if (customer is CompanyCustomer)
+            else if (customer is CompanyCustomer && period > 12)
             {
-                interestRate = 3.23m;
+                period -= 6;
             }
-        }
-        public decimal calculateInterestRate(int period)
-        {
-            if (interestRate == 2.75m && period > 6) period -= 6;
-            else if (interestRate == 3.23m && period > 12) period -= 6;
 
             return (mortgageAccountBalance * interestRate * period) / 100;
         }
 
-        public void depositMoney(decimal money)
+        public override void depositMoney(decimal money)
         {
             mortgageAccountBalance += money;
-            System.Console.WriteLine("Money has been successfully deposited");
+            System.Console.WriteLine("\nMoney has been successfully deposited\n");
         }
     }
 }
